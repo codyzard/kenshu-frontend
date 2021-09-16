@@ -1,0 +1,15 @@
+/* Main */
+
+@import "contents";
+@import "sidebar";
+
+.wrapper .main {
+  min-width: 1126px;
+  margin: 30px auto;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+/* end Main */

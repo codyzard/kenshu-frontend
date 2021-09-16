@@ -1,0 +1,20 @@
+/*  reset UA, define variable,  define modifier*/
+
+@import "common/reset";
+@import "common/variable";
+@import "common/modifer";
+@import "common/mixin";
+
+/*  end reset UA, define variable,  define modifier*/
+
+/*  partials*/
+@import "partials/header";
+
+@import "partials/navigation";
+
+@import "partials/ranking";
+
+@import "partials/main";
+
+@import "partials/footer";
+/*  end partialr*/

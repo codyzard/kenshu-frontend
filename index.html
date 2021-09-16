@@ -10,8 +10,7 @@
       type="image/png"
       href="assets/image/favicon.ico"
     />
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/scss/style.css" />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -59,7 +58,13 @@
           </div>
           <div class="main-header">
             <ul class="services">
-              <li class="services__item services__item--active-item services__item--press-release">
+              <li
+                class="
+                  services__item
+                  services__item--active-item
+                  services__item--press-release
+                "
+              >
                 <a href="#">プレスリリース</a>
               </li>
               <li class="services__item services__item--ranking">
@@ -93,12 +98,9 @@
         <ul class="articles">
           <li class="articles__item">
             <div class="articles__order-number">1</div>
-            <a href="#" class="article-link">
-              <div class="articles__articles__cover">
-                <img
-                  src="assets/image/1.png"
-                  alt="article-image"
-                />
+            <a href="#" class="articles__link">
+              <div class="articles__cover">
+                <img src="assets/image/1.png" alt="article-image" />
               </div>
               <p class="articles__content">
                 【新型コロナ感染者数マップ】緊急事態宣言発令状況やを東京都市区町村別,緊急事態宣言発令状況やを東京都市区町村別
@@ -121,14 +123,13 @@
           </li>
           <li class="articles__item">
             <div class="articles__order-number">2</div>
-            <a href="#" class="article-link">
+            <a href="#" class="articles__link">
               <div class="articles__cover">
-                <img
-                  src="assets/image/2.png"
-                  alt="article-image"
-                />
+                <img src="assets/image/2.png" alt="article-image" />
               </div>
-              <p class="articles__content">従業員に国内最大級の「危険手当」を支給</p>
+              <p class="articles__content">
+                従業員に国内最大級の「危険手当」を支給
+              </p>
             </a>
             <div class="articles__stamp">
               <p class="articles__time">
@@ -147,12 +148,9 @@
           </li>
           <li class="articles__item">
             <div class="articles__order-number">3</div>
-            <a href="#" class="article-link">
+            <a href="#" class="articles__link">
               <div class="articles__cover">
-                <img
-                  src="assets/image/3.png"
-                  alt="article-image"
-                />
+                <img src="assets/image/3.png" alt="article-image" />
               </div>
               <p class="articles__content">
                 【医療関係優先期間終了】洗える布マスク「スーパーフィット」の一般販売...
@@ -168,19 +166,18 @@
                 2時間
               </p>
               <a href="#"
-                ><p class="articles__company-release">株式会社アメイズプラス</p></a
+                ><p class="articles__company-release">
+                  株式会社アメイズプラス
+                </p></a
               >
               <a href="#"><p class="articles__pv">PV 00,000 / UU 00,000</p></a>
             </div>
           </li>
           <li class="articles__item">
             <div class="articles__order-number">4</div>
-            <a href="#" class="article-link">
+            <a href="#" class="articles__link">
               <div class="articles__cover">
-                <img
-                  src="assets/image/4.png"
-                  alt="article-image"
-                />
+                <img src="assets/image/4.png" alt="article-image" />
               </div>
               <p class="articles__content">
                 【新型コロナ感染者数マップ】緊急事態宣言発令状況やを東京都市区町村別...
@@ -203,12 +200,9 @@
           </li>
           <li class="articles__item">
             <div class="articles__order-number">5</div>
-            <a href="#" class="article-link">
+            <a href="#" class="articles__link">
               <div class="articles__cover">
-                <img
-                  src="assets/image/5.png"
-                  alt="article-image"
-                />
+                <img src="assets/image/5.png" alt="article-image" />
               </div>
               <p class="articles__content">
                 ニコニコ超会議2020 東大寺から疫病退散を祈願 法要と国宝
@@ -224,21 +218,22 @@
                 2時間
               </p>
               <a href="#"
-                ><p class="articles__company-release">株式会社アメイズプラス</p></a
+                ><p class="articles__company-release">
+                  株式会社アメイズプラス
+                </p></a
               >
               <a href="#"><p class="articles__pv">PV 00,000 / UU 00,000</p></a>
             </div>
           </li>
           <li class="articles__item">
             <div class="articles__order-number">6</div>
-            <a href="#" class="article-link">
+            <a href="#" class="articles__link">
               <div class="articles__cover">
-                <img
-                  src="assets/image/6.png"
-                  alt="article-image"
-                />
+                <img src="assets/image/6.png" alt="article-image" />
               </div>
-              <p class="articles__content">東京証券取引所市場第一部へのお知らせ</p>
+              <p class="articles__content">
+                東京証券取引所市場第一部へのお知らせ
+              </p>
             </a>
             <div class="articles__stamp">
               <p class="articles__time">
@@ -250,7 +245,9 @@
                 2時間
               </p>
               <a href="#"
-                ><p class="articles__company-release">株式会社アメイズプラス</p></a
+                ><p class="articles__company-release">
+                  株式会社アメイズプラス
+                </p></a
               >
               <a href="#"><p class="articles__pv">PV 00,000 / UU 00,000</p></a>
             </div>
@@ -263,7 +260,7 @@
           <div class="wrap">
             <ul class="articles">
               <li class="articles__item">
-                <a href="#" class="article-link">
+                <a href="#" class="articles__link">
                   <div class="articles__cover">
                     <img src="assets/image/a1.png" alt="article-image" />
                   </div>
@@ -287,7 +284,7 @@
                 </div>
               </li>
               <li class="articles__item">
-                <a href="#" class="article-link">
+                <a href="#" class="articles__link">
                   <div class="articles__cover">
                     <img src="assets/image/a1.png" alt="article-image" />
                   </div>
@@ -310,7 +307,7 @@
                 </div>
               </li>
               <li class="articles__item">
-                <a href="#" class="article-link">
+                <a href="#" class="articles__link">
                   <div class="articles__cover">
                     <img src="assets/image/a1.png" alt="article-image" />
                   </div>
@@ -331,7 +328,7 @@
                 </div>
               </li>
               <li class="articles__item">
-                <a href="#" class="article-link">
+                <a href="#" class="articles__link">
                   <div class="articles__cover">
                     <img src="assets/image/a1.png" alt="article-image" />
                   </div>
@@ -354,7 +351,7 @@
                 </div>
               </li>
               <li class="articles__item">
-                <a href="#" class="article-link">
+                <a href="#" class="articles__link">
                   <div class="articles__cover">
                     <img src="assets/image/a1.png" alt="article-image" />
                   </div>
@@ -377,7 +374,7 @@
                 </div>
               </li>
               <li class="articles__item">
-                <a href="#" class="article-link">
+                <a href="#" class="articles__link">
                   <div class="articles__cover">
                     <img src="assets/image/a1.png" alt="article-image" />
                   </div>
@@ -401,7 +398,7 @@
                 </div>
               </li>
               <li class="articles__item">
-                <a href="#" class="article-link">
+                <a href="#" class="articles__link">
                   <div class="articles__cover">
                     <img src="assets/image/a1.png" alt="article-image" />
                   </div>
@@ -425,7 +422,7 @@
                 </div>
               </li>
               <li class="articles__item">
-                <a href="#" class="article-link">
+                <a href="#" class="articles__link">
                   <div class="articles__cover">
                     <img src="assets/image/a1.png" alt="article-image" />
                   </div>
@@ -448,11 +445,13 @@
                 </div>
               </li>
               <li class="articles__item">
-                <a href="#" class="article-link">
+                <a href="#" class="articles__link">
                   <div class="articles__cover">
                     <img src="assets/image/a1.png" alt="article-image" />
                   </div>
-                  <p class="articles__content">4月13日以降の串カツ田中店舗営業に関して</p>
+                  <p class="articles__content">
+                    4月13日以降の串カツ田中店舗営業に関して
+                  </p>
                 </a>
                 <div class="articles__stamp">
                   <p class="articles__time">
@@ -469,7 +468,7 @@
                 </div>
               </li>
               <li class="articles__item">
-                <a href="#" class="article-link">
+                <a href="#" class="articles__link">
                   <div class="articles__cover">
                     <img src="assets/image/a1.png" alt="article-image" />
                   </div>
