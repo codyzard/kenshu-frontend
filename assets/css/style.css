@@ -30,12 +30,12 @@
 
 /* Header */
 
-.wrapper header {
+header {
     min-width: 1126px;
     background-color: var(--prtimes_color);
 }
 
-.wrapper header .header-container {
+.header-container {
     width: 1126px;
     height: 75px;
     display: flex;
@@ -44,29 +44,29 @@
     margin: 0 auto;
 }
 
-.wrapper header .header-container .header-small-container {
+.header-small-container {
     display: flex;
 }
 
-.header-small-container .logo {
+.logo {
     display: flex;
     margin-right: 40px;
     align-items: center;
 }
 
-.header-small-container .logo img {
+.logo img {
     width: 122px;
     height: 22px;
     margin-right: 15px;
     margin-top: -3px;
 }
 
-.header-small-container .logo .logo__text {
+.logo__text {
     font-size: 1.2rem;
     color: var(--light_blue);
 }
 
-.header-small-container .release {
+.release {
     display: flex;
     background-color: var(--header_release);
     border-radius: 5px;
@@ -74,36 +74,36 @@
     margin-right: 10px;
 }
 
-.header-small-container .release .release__item a {
+.release__item a {
     display: inline-block;
     font-size: 1.3rem;
     margin: 0 3px;
     color: white;
 }
 
-.header-small-container .release .release__item a:not(.disabled):after {
+.release__item a:not(.disabled):after {
     content: '|';
     display: inline-block;
     font-size: 1.4rem;
     padding: 0 8px;
 }
 
-.header-small-container .release .release__item a:hover {
+.release__item a:hover {
     text-decoration: underline;
 }
 
-.header-small-container .keyword {
+.search-box {
     position: relative;
 }
 
-.header-small-container .keyword input {
+.search-box input {
     text-indent: 15px;
     width: 258px;
     height: 30px;
     font-size: 1.3rem;
 }
 
-.header-small-container .keyword .btn {
+.search-box .btn {
     position: absolute;
     right: 0;
     height: 30px;
@@ -112,29 +112,29 @@
     border-radius: 0 4px 4px 0;
 }
 
-.main-header .services {
+.services {
     display: flex;
     align-items: center;
 }
 
-.main-header .services .services__item a {
+.services__item a {
     display: block;
     color: var(--light_blue);
     display: inline-block;
     font-size: 1.3rem;
 }
 
-.main-header .services .services__item a:hover {
+.services__item a:hover {
     color: white;
 }
 
-.main-header .services .services__item a:not(.disabled)::after {
+.services__item a:not(.disabled)::after {
     display: inline-block;
     content: "|";
     padding: 0 8px;
 }
 
-.main-header .services .services__item.services__item--active-item {
+.services__item--active-item a {
     color: white;
     font-weight: 700;
 }
@@ -143,13 +143,13 @@
 
 /* Navigation */
 
-.wrapper .nav {
+nav {
     min-width: 1126px;
     height: 36px;
     background-color: white;
 }
 
-.wrapper .nav .categories {
+.categories {
     display: flex;
     width: 1126px;
     height: 36px;
@@ -159,7 +159,7 @@
     gap: 20px;
 }
 
-.nav .categories .categories__item a {
+.categories__item a {
     display: inline-block;
     font-size: 1.3rem;
     color: var(--prtimes_color);
@@ -167,11 +167,11 @@
     letter-spacing: 1px;
 }
 
-.nav .categories .categories__item a:hover {
+.categories__item a:hover {
     font-weight: 700;
 }
 
-.nav .categories .categories__item.categories__item--active-item {
+.categories__item--active-item a {
     font-weight: 700;
 }
 
@@ -179,12 +179,14 @@
 
 /* Ranking */
 
-.wrapper .ranking {
+.ranking {
     min-width: 1126px;
     background-color: var(--second_bg_color);
 }
 
-.wrapper .ranking .articles {
+/* <add parent class 'ranking' for avoiding conflicting main-content's articles > */
+
+.ranking .articles {
     width: 1126px;
     height: 280px;
     margin: 0 auto;
@@ -193,7 +195,7 @@
     justify-content: space-between;
 }
 
-.ranking .articles .articles__item {
+.ranking .articles__item {
     width: 180px;
     height: 240px;
     position: relative;
@@ -203,7 +205,7 @@
     justify-content: space-between;
 }
 
-.ranking .articles .articles__item .articles__order-number {
+.ranking .articles__order-number {
     position: absolute;
     z-index: 10;
     background-color: var(--prtimes_color);
@@ -214,26 +216,26 @@
     font-weight: 700;
 }
 
-.ranking .articles .articles__item .article-link:hover>.articles__cover img {
+.ranking .article-link:hover>.articles__cover img {
     transform: scale(1.2);
 }
 
-.ranking .articles .articles__item .article-link:hover>.articles__content {
+.ranking .article-link:hover>.articles__content {
     text-decoration: underline;
     color: var(--btn_color);
 }
 
-.ranking .articles .articles__item .article-link .articles__cover {
+.ranking .articles__cover {
     overflow: hidden;
 }
 
-.ranking .articles .articles__item .article-link .articles__cover img {
+.ranking .articles__cover img {
     width: 180px;
     height: 101px;
     transition: all 0.8s;
 }
 
-.ranking .articles .articles__item .article-link .articles__content {
+.ranking .articles__content {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -241,32 +243,34 @@
     font-size: 1.3rem;
 }
 
-.ranking .articles .articles__item .articles__stamp {
+.ranking .articles__stamp {
     padding: 7px;
 }
 
-.ranking .articles .articles__item .article-link .articles__content {
+.ranking .articles__content {
     padding: 7px 7px 0 7px;
 }
 
-.ranking .articles .articles__item .articles__stamp p {
+.ranking .articles__stamp p {
     font-size: 1.2rem;
     color: var(--sub_text);
 }
 
-.ranking .articles .articles__item .articles__stamp .articles__company-release:hover {
+.ranking .articles__company-release:hover {
     color: black;
 }
 
-.ranking .articles .articles__item .articles__stamp .articles__pv:hover {
+.ranking .articles__pv:hover {
     color: black;
 }
+
+/* end <add parent class 'ranking' for avoiding conflicting main-content's articles > */
 
 /* end Ranking */
 
 /* Main */
 
-.wrapper .main {
+.main {
     min-width: 1126px;
     margin: 30px auto;
     margin-bottom: 70px;
@@ -275,22 +279,24 @@
     gap: 14px;
 }
 
-/* ---content---*/
+/* ---contents---*/
 
-.wrapper .main .contents {
+/* <add parent class 'contents' for avoiding conflicting ranking's articles > */
+
+.contents {
     width: 800px;
 }
 
-.wrapper .main .contents .title {
+.contents .title {
     font-size: 2.4rem;
 }
 
-.wrapper .main .contents .articles {
+.contents .articles {
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-.main .contents .articles .articles__item {
+.contents .articles__item {
     width: 380px;
     padding: 15px 0;
     display: flex;
@@ -299,7 +305,7 @@
     border-bottom: 1px solid var(--line_color);
 }
 
-.main .contents .articles .articles__item .article-link {
+.contents .article-link {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -307,17 +313,17 @@
     height: 66px;
 }
 
-.main .contents .articles .articles__item .article-link:hover>.articles__content {
+.contents .article-link:hover>.articles__content {
     color: var(--btn_color);
     text-decoration: underline;
 }
 
-.main .contents .articles .articles__item .article-link .articles__cover img {
+.contents .article-link .articles__cover img {
     width: 100px;
     height: 66px;
 }
 
-.main .contents .articles .articles__item .article-link .articles__content {
+.contents .articles__content {
     font-size: 1.4rem;
     font-weight: 700;
     -webkit-line-clamp: 3;
@@ -326,30 +332,32 @@
     display: -webkit-box;
 }
 
-.main .contents .articles .articles__item .articles__stamp {
+.contents .articles__stamp {
     color: var(--sub_text)
 }
 
-.main .contents .articles .articles__item .articles__stamp .articles__time {
+.contents .articles__time {
     font-size: 1.2rem;
 }
 
-.main .contents .articles .articles__item .articles__stamp .articles__company-release {
+.contents .articles__company-release {
     font-size: 1.3rem;
     color: var(--sub_text)
 }
 
-.main .contents .articles .articles__item .articles__stamp .articles__company-release:hover {
+.contents .articles__company-release:hover {
     color: black;
 }
 
-.main .wrap .control {
+/* end <add parent class 'contents' for avoiding conflicting ranking's articles > */
+
+.control {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
 
-.main .wrap .control a {
+.control a {
     display: inline-block;
     color: white;
     font-size: 1.4rem;
@@ -357,23 +365,23 @@
     font-weight: 700;
 }
 
-.main .wrap .control a:hover {
+.control a:hover {
     opacity: 0.8;
 }
 
-/* ---end content---*/
+/* ---end contents---*/
 
 /* ---sidebar---*/
 
-.wrapper .main .side {
+.side {
     width: 312px;
 }
 
-.main .side .keyword .title {
+.keyword .title {
     font-size: 1.8rem;
 }
 
-.main .side .keyword .hot-keywords {
+.hot-keywords {
     margin: 20px 0;
     border-bottom: 1px solid var(--line_color);
     padding-bottom: 10px;
@@ -382,7 +390,7 @@
     gap: 10px;
 }
 
-.main .side .keyword .hot-keywords .hot-keywords__item a {
+.hot-keywords__item a {
     font-size: 1.2rem;
     background-color: var(--second_bg_color);
     display: inline-block;
@@ -391,7 +399,7 @@
     border: 1px solid var(--second_bg_color);
 }
 
-.main .side .keyword .hot-keywords .hot-keywords__item a:hover {
+.hot-keywords__item a:hover {
     background-color: white;
 }
 
@@ -401,7 +409,7 @@
 
 /* Footer */
 
-.wrapper footer {
+footer {
     min-width: 1126px;
     background-color: var(--second_bg_color);
     display: flex;
@@ -412,42 +420,42 @@
 
 /* ---service--- */
 
-.wrapper footer .contents, .wrapper footer .term, .wrapper footer .copy-right {
+.footer-contents, .term, .copy-right {
     width: 1126px;
     margin: 0 auto;
     display: flex;
 }
 
-.wrapper footer .contents {
+.footer-contents {
     border-bottom: 1px solid var(--footer_line);
     padding-bottom: 25px;
 }
 
-footer .contents .contents__item {
+.footer-contents__item {
     width: 281px;
 }
 
-footer .contents .contents__item .contents__item__heading {
+.footer-contents__heading {
     font-size: 1.3rem;
     letter-spacing: 0.5px;
     font-weight: 400;
 }
 
-footer .contents .contents__item .services {
+.footer-services {
     margin-top: 15px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-footer .contents .contents__item .services .services__item a {
+.footer-services__item a {
     display: inline-block;
     font-size: 1.2rem;
     color: var(--footer_text);
     letter-spacing: 0.5px;
 }
 
-footer .contents .contents__item .services .services__item a:hover {
+.footer-services__item a:hover {
     text-decoration: underline;
 }
 
@@ -455,23 +463,23 @@ footer .contents .contents__item .services .services__item a:hover {
 
 /* ---term--- */
 
-.wrapper footer .term {
+.term {
     margin: 18px auto;
 }
 
-.wrapper footer .term .terms {
+.terms {
     display: flex;
     gap: 15px;
 }
 
-.wrapper footer .term .terms .terms__item a {
+.terms__item a {
     display: inline-block;
     font-size: 1.2rem;
     color: var(--footer_text);
     letter-spacing: 0.5px;
 }
 
-.wrapper footer .term .terms .terms__item a:hover {
+.terms__item a:hover {
     text-decoration: underline;
 }
 
@@ -479,7 +487,7 @@ footer .contents .contents__item .services .services__item a:hover {
 
 /* ---copyright--- */
 
-.wrapper footer .copy-right p {
+.copy-right p {
     font-size: 1.1rem;
     color: var(--footer_text);
 }
