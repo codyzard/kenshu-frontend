@@ -4,10 +4,9 @@
 
 .contents {
   width: 800px;
-}
-
-.contents .title {
-  font-size: 2.4rem;
+  &__title {
+    font-size: 2.4rem;
+  }
 }
 
 .contents .articles {
@@ -20,7 +19,7 @@
     flex-direction: column;
     border-bottom: 1px solid $line_color;
   }
-  &-link {
+  &__link {
     @include flex_horizontal_spacebetween;
     flex-direction: row-reverse;
     height: 66px;

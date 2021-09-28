@@ -52,7 +52,7 @@
   }
 
   // article interaction
-  &-link:hover {
+  &__link:hover {
     & > .articles__cover img {
       transform: scale(1.2);
     }
