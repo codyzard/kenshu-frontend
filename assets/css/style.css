@@ -13,7 +13,13 @@
 
 /* Common */
 
-.clock-icon {
+a {
+    display: inline-block;
+    color: inherit;
+    font-size: inherit;
+}
+
+.clock-icon--size {
     width: 10px;
     height: 10px;
 }
@@ -75,13 +81,12 @@ header {
 }
 
 .release__item a {
-    display: inline-block;
     font-size: 1.3rem;
     margin: 0 3px;
     color: white;
 }
 
-.release__item a:not(.disabled):after {
+.release__item a:not(.disabled)::after {
     content: '|';
     display: inline-block;
     font-size: 1.4rem;
@@ -150,17 +155,16 @@ nav {
 }
 
 .categories {
-    display: flex;
     width: 1126px;
     height: 36px;
     margin: 0 auto;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
 .categories__item a {
-    display: inline-block;
     font-size: 1.3rem;
     color: var(--prtimes_color);
     transition: all 0.1s;
